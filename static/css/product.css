@@ -15,6 +15,10 @@
     color: #FEC260;
     transition: color .15s ease-in-out;
   }
+  .site-header h5 {
+    color: #FEC260;
+    transition: color .15s ease-in-out;
+  }
   .site-header a:hover {
     color: #A12568;
     text-decoration: none;
