@@ -11,11 +11,15 @@ def home():
 
 @app.route("/news")
 def news():
-    return render_template("index.html")
+    return render_template("news.html")
 
 @app.route("/pricing")
 def pricing():
     return render_template("pricing.html")
+
+@app.route("/baseTest")
+def baseTest():
+    return render_template("baseTest.html")
 
 
 
