@@ -29,6 +29,10 @@ def pricing():
 def administration():
     return render_template("administration.html")
 
+@app.route("/train")
+def train():
+    return render_template("train.html")
+
 @app.route("/academic")
 def academic():
     return render_template("academic.html")
