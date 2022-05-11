@@ -1,33 +1,40 @@
 .container {
     max-width: 960px;
-  }
-  
-  /*
+}
+
+
+/*
    * Custom translucent site header
    */
-  
-  .site-header {
+
+.site-header {
     background-color: #2A0944;
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     backdrop-filter: saturate(180%) blur(20px);
-  }
-  .site-header a {
+}
+
+.site-header a {
     color: #FEC260;
     transition: color .15s ease-in-out;
-  }
-  .site-header h5 {
+}
+
+.site-header h5 {
     color: #FEC260;
     transition: color .15s ease-in-out;
-  }
-  .site-header a:hover {
+}
+
+.site-header a:hover {
     color: #A12568;
     text-decoration: none;
-  }
-  
-  /*
+}
+
+
+/*
    * Dummy devices (replace them with your own or something else entirely!)
    */
-  /*
+
+
+/*
   .product-device {
     position: absolute;
     right: 10%;
@@ -58,16 +65,18 @@
     background-color: #e5e5e5;
   }
   */
-  
-  /*
+
+
+/*
    * Extra utilities
    */
-  
-  .flex-equal > * {
+
+.flex-equal>* {
     flex: 1;
-  }
-  @media (min-width: 768px) {
-    .flex-md-equal > * {
-      flex: 1;
+}
+
+@media (min-width: 768px) {
+    .flex-md-equal>* {
+        flex: 1;
     }
-  }
+}
