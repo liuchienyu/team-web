@@ -19,7 +19,7 @@ body {
   }
   
   /* Declare heights because of positioning of img element */
-  .carousel-item {
+  /*.carousel-item {
     height: 500px;
     width: 1400px;
   }
@@ -30,7 +30,7 @@ body {
     min-width: 100%;
     width: 1400px;
     height: 500px;
-  }
+  }*/
 
   .left{ text-shadow:none; } 
   .carousel-control.right, .carousel-control.left{ background-image: none; }

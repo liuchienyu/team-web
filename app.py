@@ -13,9 +13,9 @@ def home():
 def news():
     return render_template("news.html")
 
-@app.route("/baseTest")
-def baseTest():
-    return render_template("baseTest.html")
+@app.route("/activity")
+def activity():
+    return render_template("activity.html")
 
 @app.route("/service")
 def service():
