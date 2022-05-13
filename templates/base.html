@@ -50,59 +50,69 @@
 <body>
     <!-- Topbar -->
     <header class="site-header sticky-top py-1">
-        <nav class="container d-flex align-items-center justify-content-between">
-            <li class="navbar-brand py-3">
-                <a href="home" aria-label="Product">
-                    <img src="../static/images/logo-nb.ico" width="30">
-                </a>
-            </li>
-            <li class="nav-link">
-                <a class="py-2" href="home">首頁</a>
-            </li>
-            <li class="nav-link dropdown">
-                <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    最新消息
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="news">最新公告</a></li>
-                    <li><a class="dropdown-item" href="activity">營隊資訊</a></li>
-                    <li><a class="dropdown-item" href="#">團隊事件</a></li>
-                </ul>
-            </li>
-            <li class="nav-link dropdown">
-                <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    關於我們
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="service">服務項目</a></li>
-                    <li><a class="dropdown-item" href="pricing">價格</a></li>
-                </ul>
-            </li>
-            <li class="nav-link dropdown">
-                <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown"
-                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    團隊單位
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="administration">行政單位</a></li>
-                    <li><a class="dropdown-item" href="train">實習培訓單位</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="academic">學術單位</a></li>
-                </ul>
-            </li>
-            <li class="nav-link">
-                <a class="py-2 d-inline-block" href="contact">聯絡我們</a>
-            </li>
-            <li class="nav-link">
-                <a class="py-2 d-inline-block" href="recruit">招募資訊</a>
-            </li>
-            <li class="nav-link">
-                <a class="py-2 d-inline-block" href="login">登入</a>
-            </li>
+        <nav
+            class="container-fluid d-flex flex-wrap align-items-center">
+            <ul
+                class="nav col-12 col-lg-8 me-lg-auto mb-2 align-items-center justify-content-between justify-content-lg-start mb-md-0">
+                <li class="navbar-brand py-3">
+                    <a href="home" aria-label="Product">
+                        <img src="../static/images/logo-nb.ico" width="30">
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a class="py-2" href="home">首頁</a>
+                </li>
+                <li class="nav-link dropdown">
+                    <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        最新消息
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="news">最新公告</a></li>
+                        <li><a class="dropdown-item" href="activity">營隊資訊</a></li>
+                        <li><a class="dropdown-item" href="#">團隊事件</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link dropdown">
+                    <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        關於我們
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="service">服務項目</a></li>
+                        <li><a class="dropdown-item" href="pricing">價格</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link dropdown">
+                    <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        團隊單位
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="administration">行政單位</a></li>
+                        <li><a class="dropdown-item" href="train">實習培訓單位</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="academic">學術單位</a></li>
+                    </ul>
+                </li>
+                <li class="nav-link">
+                    <a class="py-2 d-inline-block" href="contact">聯絡我們</a>
+                </li>
+                <li class="nav-link">
+                    <a class="py-2 d-inline-block" href="recruit">招募資訊</a>
+                </li>
+            </ul>
+            <form
+                class="col-12 col-lg-2 mb-3 mb-lg-0 me-lg-3 align-items-center text-center text-lg-right">
+                <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
+            </form>
+
+            <div class="col-12 col-lg-2 align-items-center text-center text-lg-right">
+                <button type="button" class="btn btn-outline-light me-2"><a href="login">登入</a></button>
+                <button type="button" class="btn btn-warning"><a href="register" class="text-dark">註冊</a></button>
+            </div>
         </nav>
     </header>
     <!-- End Topbar -->
@@ -110,7 +120,7 @@
     {% block body %}
     <main></main>
     {% endblock body %}
-    
+
     <!-- Footer -->
     <footer class="container-fluid site-header py-5">
         <div class="row text-center">
