@@ -1,199 +1,280 @@
 {% extends 'base.html' %}
 {% block body %}
 <div class="container-fluid justify-content-between align-items-center">
-    <div class="row">
-      <div id="myCarousel" class="col-12 carousel slide mx-auto mt-3 mb-3" data-bs-ride="carousel">
-        <!-- 底下3個點點 -->
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-            aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-  
-        <!-- Pictures -->
-        <div class="carousel-inner">
-          <!-- First picture -->
-          <div class="carousel-item active">
-            <img src="/static/images/teams2.png" width="100%">
+  <div class="row">
+    <div id="myCarousel" class="col-12 carousel slide mx-auto mt-3 mb-3" data-bs-ride="carousel">
+      <!-- 底下3個點點 -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
 
-          </div>
-  
-          <!-- Second picture -->
-          <div class="carousel-item">
-            <img src="/static/images/teams1.png" width="100%">
-          </div>
-  
-          <!-- Third picture -->
-          <div class="carousel-item">
-            <img src="/static/images/level_up_adv2.png" width="100%">
-          </div>
-  
+      <!-- Pictures -->
+      <div class="carousel-inner">
+        <!-- First picture -->
+        <div class="carousel-item active">
+          <img src="/static/images/teams2.png" width="100%">
         </div>
-  
-        <button class="carousel-control-prev border-0" type="button" style="background:transparent"
-          data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-  
-        <button class="carousel-control-next border-0" type="button" style="background:transparent"
-          data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
+
+        <!-- Second picture -->
+        <div class="carousel-item">
+          <img src="/static/images/caree.png" width="100%">
+        </div>
+
+        <!-- Third picture -->
+        <div class="carousel-item">
+          <img src="/static/images/level_up_adv2.png" width="100%">
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev border-0" type="button" style="background:transparent"
+        data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+
+      <button class="carousel-control-next border-0" type="button" style="background:transparent"
+        data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+  <!--分隔線-->
+  <div class="album py-5">
+    <div class="container-fluid">
+      <!-- First row -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <!-- 公告1-1 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase.png" width="100%" height="225">
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告1-2 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase2.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告1-3 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase3.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告1-4 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase3.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告2-1 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase3.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告2-2 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase2.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告2-3 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告2-4 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告3-1 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告3-2 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase2.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告3-3 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase3.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 公告3-4 -->
+        <div class="col-md-6 col-lg-3 col-12 mb-3">
+          <div class="card shadow-sm">
+            <img src="/static/images/newsbase3.png" width="100%" height="225">
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-  <!--分隔線-->
-    <div class="album py-5">
-        <div class="container">
-
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase.png" width="100%" height="225">
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase2.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase3.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase3.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase2.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase2.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-            <div class="col col-4 mb-3">
-            <div class="card shadow-sm">
-                <img src="/static/images/newsbase3.png" width="100%" height="225">
-
-                <div class="card-body">
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
-    </div>
+  </div>
 </div>
 {% endblock body %}

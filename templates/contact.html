@@ -1,4 +1,36 @@
 {% extends 'base.html' %}
 {% block body %}
-
+<link rel="stylesheet" href="/static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+<link rel="stylesheet" href="/static/css/style.css">
+<main>
+    <div class="wrapper">
+        <div class="inner">
+            <form action="">
+                <h3>Contact Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                </p>
+                <label class="form-group">
+                    <input type="text" class="form-control"
+                        style="font-family: 'Montserrat-Regular'; color: #fff; font-size: 15px;" required>
+                    <span>Your Name</span>
+                    <span class="border"></span>
+                </label>
+                <label class="form-group">
+                    <input type="text" class="form-control"
+                        style="font-family: 'Montserrat-Regular'; color: #fff; font-size: 15px;" required>
+                    <span for="">Your Mail</span>
+                    <span class="border"></span>
+                </label>
+                <label class="form-group">
+                    <textarea name="" id="" class="form-control text-white" required></textarea>
+                    <span for="">Your Message</span>
+                    <span class="border"></span>
+                </label>
+                <button class="button1">Submit
+                    <i class="zmdi zmdi-arrow-right"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</main>
 {% endblock body %}
