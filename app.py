@@ -53,6 +53,18 @@ def login():
 def register():
     return render_template("register.html")
 
+@app.route("/introduction")
+def introduction():
+    return render_template("introduction.html")
+
+@app.route("/history")
+def history():
+    return render_template("history.html")
+
+@app.route("/team_public")
+def team_public():
+    return render_template("team_public.html")
+
 
 
 if __name__ == "__main__":
