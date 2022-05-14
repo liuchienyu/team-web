@@ -19,7 +19,7 @@ def activity():
 
 @app.route("/service")
 def service():
-    return render_template("service.html")
+    return render_template("404.html")
 
 @app.route("/pricing")
 def pricing():
