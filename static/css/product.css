@@ -32,6 +32,9 @@ body {
     text-decoration: none;
 }
 
+.site-header button a{
+    color: white;
+}
 
 /*
    * Dummy devices (replace them with your own or something else entirely!)
@@ -102,4 +105,17 @@ body {
 .dropdown-menu>li>a:hover:after {
     transform: rotate(-90deg);
     transition: 1s;
+}
+
+@media (min-width: 960px) {
+    .nav-item button{
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 960px) {
+    .nav-item button{
+        margin-top: 10px;
+        margin-right: 10px;
+    }
 }

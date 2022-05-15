@@ -35,10 +35,89 @@
 <body>
     <!-- Topbar -->
     <header class="site-header sticky-top py-1">
+        <nav class="navbar navbar-expand-lg" aria-label="Third navbar example">
+            <div class="container-fluid" >
+                <a class="navbar-brand" href="home">
+                    <img src="../static/images/logo-nb.ico" width="30">
+                </a>
+                <button class="navbar-toggler" style="background-color: #fec260;" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample03">
+                    <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+                        <li class="nav-item" style="display: table;">
+                            <a class="nav-link" style="display: table-cell; vertical-align: middle;" aria-current="page" href="home">首頁</a>
+                        </li>
+                        <li class="nav-item dropdown" style="display: table;">
+                            <a class="nav-link" style="display: table-cell; vertical-align: middle;" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                                aria-expanded="false">最新消息</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="news">最新公告</a></li>
+                                <li><a class="dropdown-item" href="activity">營隊資訊</a></li>
+                                <li><a class="dropdown-item" href="team_public">團隊公告</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="display: table;">
+                            <a class="nav-link" style="display: table-cell; vertical-align: middle;" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                                aria-expanded="false">關於我們</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="introduction">團隊介紹</a></li>
+                                <li><a class="dropdown-item" href="history">團隊歷史</a></li>
+                                <li><a class="dropdown-item" href="service">服務項目</a></li>
+                                <li><a class="dropdown-item" href="pricing">價格</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="display: table;">
+                            <a class="nav-link" style="display: table-cell; vertical-align: middle;" href="#" id="dropdown03" data-bs-toggle="dropdown"
+                                aria-expanded="false">團隊單位</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><h6 class="dropdown-header">行政單位</h6></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li class="dropdown-submenu"><a class="dropdown-item" href="administration">核心行政團隊</a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="introduction">團隊介紹</a></li>
+                                        <li><a class="dropdown-item" href="history">團隊歷史</a></li>
+                                        <li><a class="dropdown-item" href="service">服務項目</a></li>
+                                        <li><a class="dropdown-item" href="pricing">價格</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="train">實習培訓單位</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><h6 class="dropdown-header">學術單位</h6></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="academic">教育研究單位</a></li>
+                                <li><a class="dropdown-item" href="#">音樂舞蹈研究單位</a></li>
+                                <li><a class="dropdown-item" href="#">法律研究單位</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="display: table;">
+                            <a class="nav-link" style="display: table-cell; vertical-align: middle;" href="contact">聯絡我們</a>
+                        </li>
+                        <li class="nav-item" style="display: table;">
+                            <a class="nav-link" style="display: table-cell; vertical-align: middle;" href="recruit">招募資訊</a>
+                        </li>
+                        <li class="nav-item" style="display: table;">
+                            <form class="navbar-form" style="display: table-cell; vertical-align: middle;">
+                                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                            </form>
+                        </li>
+                        <li class="nav-item" style="display: table;">
+                            <button style="display: table-cell; vertical-align: middle;" type="button" class="btn btn-warning"><a class="nav-link" href="login">登入</a></button>
+                            <button style="display: table-cell; vertical-align: middle;" type="button" class="btn btn-warning"><a class="nav-link" href="register">註冊</a></button>
+                        </li>
+                    </ul>                    
+                </div>
+            </div>
+        </nav>
+
+<!--
         <nav
-            class="container-fluid d-flex flex-wrap align-items-center">
+            class="container-fluid d-flex flex-wrap align-items-center justify-content-between justify-content-lg-start">
             <ul
-                class="nav col-12 col-lg-8 me-lg-auto mb-2 align-items-center justify-content-between justify-content-lg-start mb-md-0">
+                class="navbar navbar-expand-sm col-12 col-lg-7 me-lg-auto mb-2 align-items-center justify-content-between justify-content-lg-start mb-md-0">
                 <li class="navbar-brand py-3">
                     <a href="home" aria-label="Product">
                         <img src="../static/images/logo-nb.ico" width="30">
@@ -48,7 +127,7 @@
                     <a class="py-2" href="home">首頁</a>
                 </li>
                 <li class="nav-link dropdown">
-                    <a class="py-2 d-inline-block nav-link " href="#" id="navbarDropdown" role="button"
+                    <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         最新消息
                     </a>
@@ -59,7 +138,7 @@
                     </ul>
                 </li>
                 <li class="nav-link dropdown">
-                    <a class="py-2 d-inline-block nav-link " href="#" id="navbarDropdown" role="button"
+                    <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         關於我們
                     </a>
@@ -71,28 +150,17 @@
                     </ul>
                 </li>
                 <li class="nav-link dropdown">
-                    <a class="py-2 d-inline-block nav-link " href="#" id="navbarDropdown" role="button"
+                    <a class="py-2 d-inline-block nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         團隊單位
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><h6 class="dropdown-header">行政單位</h6></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li class="dropdown-submenu"><a class="dropdown-item" href="administration">核心行政團隊</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="introduction">團隊介紹</a></li>
-                                <li><a class="dropdown-item" href="history">團隊歷史</a></li>
-                                <li><a class="dropdown-item" href="service">服務項目</a></li>
-                                <li><a class="dropdown-item" href="pricing">價格</a></li>
-                            </ul>
-                        </li>
+                        <li><a class="dropdown-item" href="administration">行政單位</a></li>
                         <li><a class="dropdown-item" href="train">實習培訓單位</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><h6 class="dropdown-header">學術單位</h6></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="academic">教育研究單位</a></li>
-                        <li><a class="dropdown-item" href="#">音樂舞蹈研究單位</a></li>
-                        <li><a class="dropdown-item" href="#">法律研究單位</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="academic">學術單位</a></li>
                     </ul>
                 </li>
                 <li class="nav-link">
@@ -102,8 +170,7 @@
                     <a class="py-2 d-inline-block" href="recruit">招募資訊</a>
                 </li>
             </ul>
-            <form
-                class="col-12 col-lg-2 mb-3 mb-lg-0 me-lg-3 align-items-center text-center text-lg-right">
+            <form class="col-12 col-lg-2 mb-3 mb-lg-0 me-lg-3 align-items-center text-center text-lg-right">
                 <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
             </form>
 
@@ -111,7 +178,9 @@
                 <button type="button" class="btn btn-outline-light me-2"><a href="login">登入</a></button>
                 <button type="button" class="btn btn-warning"><a href="register" class="text-dark">註冊</a></button>
             </div>
-        </nav>
+
+            </div>
+        </nav>-->
     </header>
     <!-- End Topbar -->
 
