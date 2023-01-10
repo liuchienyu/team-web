@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'cesweb'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_CCACAE4AA9B34E9C9F98F762BF122BF2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BE83A2E948EF48AE983C545B0433E9CB }}
